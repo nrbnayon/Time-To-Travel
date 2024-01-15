@@ -25,8 +25,8 @@
     <header>
       <nav>
         <div class="nav-right-container">
-          <a href="#"><img src="assets/logo.png" /></a>
-          <a href="#">Time <span>Travel</span></a>
+          <a href="#" class="nav-img"><img src="assets/logo.png" /></a>
+          <a href="#" class="nav-title">Time <span>Travel</span></a>
         </div>
         <div class="nav-left-container">
           <a href="#">Home</a>
@@ -35,7 +35,67 @@
           <a href="#">Blog</a>
           <a href="#">Conatct</a>
         </div>
+        <div class="menu-items">
+          <a href="#" class="menu-icon" id="menuIcon"
+            ><i class="fas fa-bars"></i
+          ></a>
+          <div class="menu-lists">
+            <a href="#">Home</a>
+            <a href="#">Packages</a>
+            <a href="#">Testimonial</a>
+            <a href="#">Blog</a>
+            <a href="#">Conatct</a>
+          </div>
+        </div>
       </nav>
+      <section class="banner-container">
+        <div class="banner-img"></div>
+        <img src="assets/banner.png" alt="Midnight Background" class="bg-img" />
+        <div class="banner-text-container">
+          <div class="banner-text">
+            <h3 class="banner-title">Explore Your Travel</h3>
+            <p class="banner-desc">
+              Dolor sit amet consectetur. Nullam suspendisse vitae ultricies
+              dolor adipiscing. In et odio enim ac quis sapien urna eu
+              phasellus.
+            </p>
+          </div>
+          <div class="location-select-container">
+            <div class="select-time-location"><label>Where Go</label></div>
+            <div class="select-time-location">
+              <select name="dropdown">
+                <option value="" disabled selected hidden>When</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+              </select>
+            </div>
+            <div class="select-time-location">
+              <select name="dropdown">
+                <option value="" disabled selected hidden>Select Type</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+              </select>
+            </div>
+            <div class="primary-btn">
+              <button class="search-btn">
+                <i class="fas fa-search"></i>Find Here
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
+    <!-- -------Header and banner section Start-------- -->
+    <script>
+      document
+        .getElementById("menuIcon")
+        .addEventListener("click", function () {
+          document.querySelector(".menu-lists").classList.toggle("show-menu");
+        });
+    </script>
   </body>
 </html>

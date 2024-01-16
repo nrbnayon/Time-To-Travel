@@ -775,8 +775,12 @@ footer {
   .footer-title {
     padding: 1rem;
   }
-  .perfect-place-desc h3 {
+  .perfect-place-desc h3,
+  .offer-pop-up h3 {
     font-size: 1.5rem;
+  }
+  .offer-pop-up {
+    width: 70%;
   }
 }
 

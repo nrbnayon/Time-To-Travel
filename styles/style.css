@@ -784,41 +784,6 @@ footer {
   }
 }
 
-/* --------Medium device responsive-------- */
-/* @media screen and (min-width: 601px) and (max-width: 992px) {
-  body {
-    width: 90%;
-    margin: 0 auto;
-  }
-  nav {
-    justify-content: space-between;
-  }
-  .nav-title,
-  .nav-img {
-    font-size: 1.5rem;
-  }
-  .nav-left-container a {
-    width: 100%;
-    font-size: 1rem;
-    margin-left: 1rem;
-  }
-  .banner-text .banner-title,
-  .banner-text .banner-desc {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .banner-text .banner-title,
-  .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  .destination-title,
-  .discount-container {
-    width: 100%;
-    margin: 1rem auto;
-  }
-} */
-
 @media screen and (min-width: 601px) and (max-width: 992px) {
   body {
     width: 90%;

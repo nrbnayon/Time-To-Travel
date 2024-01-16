@@ -131,7 +131,6 @@ nav {
   height: auto;
   object-fit: cover;
   border-radius: 0.5rem;
-
   z-index: 1;
 }
 .banner-img {
@@ -253,7 +252,10 @@ main {
   max-width: 74rem;
   margin: 0 auto;
 }
-
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 .popular-tour-container {
   width: 100%;
   margin: 3rem 0;
@@ -261,11 +263,13 @@ main {
   justify-content: space-between;
 }
 
-.popular-text {
+.popular-text,
+.popular-img {
   flex: 1;
   height: auto;
 }
-.popular-desc {
+.popular-desc,
+.perfect-place-desc {
   width: 85%;
   display: flex;
   flex-direction: column;
@@ -285,9 +289,7 @@ main {
 .popular-desc ul li {
   margin-bottom: 0.5rem;
 }
-.popular-img {
-  flex: 1;
-}
+
 .popular-img img {
   max-width: 100%;
   max-width: 100%;
@@ -470,7 +472,137 @@ main {
   width: 20%;
   margin: 0 auto 3rem;
 }
+/* -----Perfect- place---- */
 
+.perfect-place-container {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.perfect-place-details,
+.perfect-place-video {
+  flex: 1;
+  height: auto;
+}
+
+.perfect-desc {
+  color: #5a5a5d;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+.perfect-place-desc h3 {
+  font-size: 2rem;
+}
+.list-text-color {
+  color: #131318;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-left: 5%;
+}
+.perfect-place-video {
+  height: 54vh;
+  width: 100%;
+}
+
+.place-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.place-video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 1rem;
+  background: linear-gradient(
+    180deg,
+    #131318 -31.96%,
+    rgba(19, 19, 24, 0) 100%
+  );
+}
+
+/* --------Newsletter styles ---- */
+.newsletter-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.newsletter-left {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ff5400;
+}
+.newsletter-left h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.newsletter-left input {
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: rgba(19, 19, 24, 0.05);
+}
+.newsletter-left::placeholder {
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.newsletter-left div {
+  width: 100%;
+}
+.newsletter-right {
+  flex: auto;
+  width: 100%;
+  height: 26rem;
+}
+.newsletter-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.newsletter-img img {
+  width: 100%;
+  height: 100%;
+}
+.offer-pop-up {
+  position: absolute;
+  right: 1rem;
+  bottom: 4rem;
+  z-index: 2;
+  width: 50%;
+  height: auto;
+  padding: 1rem;
+  text-align: center;
+  transform: rotate(-19.628deg);
+  border-radius: 1rem;
+  background: #ff5400;
+}
+.offer-pop-up p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.offer-pop-up h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+/* ---newsletter end------- */
+/* ---------footer--------- */
 footer {
   width: 100%;
   background: rgba(19, 19, 24, 0.05);
@@ -483,6 +615,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.footer-title {
+  margin-left: 2rem;
 }
 .footer-gap {
   margin-top: 1rem;
@@ -509,6 +644,7 @@ footer {
   font-size: 1rem;
   font-weight: 300;
 }
+
 /* ----Responsive mobile styles ---------------- */
 @media screen and (max-width: 600px) {
   body {
@@ -561,6 +697,8 @@ footer {
   .discount-img-container,
   .select-time-location,
   .primary-btn,
+  .newsletter-left,
+  .newslette-btn,
   .footer {
     width: 100%;
   }
@@ -576,7 +714,9 @@ footer {
   .popular-tour-container,
   .row1,
   .row2,
-  .row3 {
+  .row3,
+  .perfect-place-container,
+  .newsletter-container {
     width: 100%;
     flex-direction: column;
     gap: 1rem;
@@ -634,5 +774,160 @@ footer {
   }
   .footer-title {
     padding: 1rem;
+  }
+  .perfect-place-desc h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* --------Medium device responsive-------- */
+/* @media screen and (min-width: 601px) and (max-width: 992px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .nav-title,
+  .nav-img {
+    font-size: 1.5rem;
+  }
+  .nav-left-container a {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .banner-text .banner-title,
+  .banner-text .banner-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .banner-text .banner-title,
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .destination-title,
+  .discount-container {
+    width: 100%;
+    margin: 1rem auto;
+  }
+} */
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .nav-title,
+  .nav-img {
+    font-size: 1.5rem;
+  }
+  .nav-left-container a {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  .banner-text .banner-title,
+  .banner-text .banner-desc {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+  }
+  .location-select-container,
+  .search-btn,
+  .dropdown {
+    width: 90%;
+    font-size: 1rem;
+  }
+
+  .nav-left-container,
+  .nav-right-container {
+    font-size: 1rem;
+  }
+
+  .menu-lists.show-menu {
+    max-height: 15rem;
+  }
+
+  .select-time-location,
+  .primary-btn {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .popular-tour-container {
+    flex-direction: column;
+  }
+
+  .popular-desc,
+  .perfect-place-desc {
+    width: 100%;
+  }
+
+  .destination-title {
+    width: 100%;
+  }
+  .banner-text .banner-title,
+  .section-title,
+  .read-more-btn {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .discount {
+    width: 100%;
+    height: auto;
+  }
+  .popular-img img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .destination-img-container {
+    grid-template-columns: 1fr;
+  }
+
+  .choose1,
+  .choose2,
+  .choose3 {
+    width: 100%;
+  }
+
+  .discount1,
+  .discount2,
+  .discount3 {
+    font-size: 1rem;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+  }
+  .discount2 {
+    bottom: 0;
+    left: 0;
+  }
+  .newsletter-container {
+    flex-direction: column;
+  }
+
+  .newsletter-left {
+    width: 100%;
+  }
+
+  .newsletter-right {
+    height: auto;
+  }
+
+  .footer-links {
+    width: 100%;
   }
 }

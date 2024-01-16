@@ -1,6 +1,4 @@
-Certainly! Below is a sample `README.md` content for your project hosted on Netlify. Make sure to update it with accurate information:
 
-```markdown
 # Time to Travel Website
 
 Welcome to the Time to Travel website! This project is a travel website showcasing various travel destinations, popular tours, and travel-related information.

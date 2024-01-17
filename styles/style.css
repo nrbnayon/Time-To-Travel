@@ -960,6 +960,18 @@ footer {
     bottom: 0;
     left: 0;
   }
+  .blog-left {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .blog-img {
+    width: 100%;
+    height: auto;
+  }
+  .blog-text {
+    gap: 0.8rem;
+  }
   .newsletter-container {
     flex-direction: column;
   }

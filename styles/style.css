@@ -494,6 +494,7 @@ section {
 }
 .perfect-place-desc h3 {
   font-size: 2rem;
+  margin-bottom: 0;
 }
 .list-text-color {
   color: #131318;
@@ -502,6 +503,7 @@ section {
   line-height: 1.5rem;
   margin-left: 5%;
 }
+
 .perfect-place-video {
   height: 54vh;
   width: 100%;

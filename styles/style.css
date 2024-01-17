@@ -634,7 +634,7 @@ footer {
   font-size: 1.5rem;
 }
 .footer hr {
-  width: 50%;
+  width: 80%;
   margin: 2rem auto;
   height: 1px;
   background: rgba(19, 19, 24, 0.1);
@@ -693,6 +693,9 @@ footer {
     margin-top: 1rem;
     flex-direction: column;
   }
+  .select-time-location select {
+    background: none;
+  }
   .popular-desc,
   .discount-img-container,
   .select-time-location,
@@ -710,6 +713,9 @@ footer {
   }
   #read-more {
     width: 50%;
+  }
+  #read-more .book-btn {
+    font-size: 0.8rem;
   }
   .popular-tour-container,
   .row1,
@@ -758,13 +764,14 @@ footer {
     left: 1rem;
     bottom: auto;
     width: 80%;
-    height: auto;
+    max-height: 100%;
+    bottom: 0.5rem;
   }
   .see-packages {
     text-align: center;
   }
   .footer-links {
-    width: 50%;
+    width: 70%;
     margin: 1rem auto 0;
     display: flex;
     justify-content: space-between;
@@ -773,18 +780,26 @@ footer {
     font-size: 2rem;
   }
   .footer-title {
-    padding: 1rem;
+    padding: 0.5rem;
+  }
+  .footer-gap {
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
   .perfect-place-desc h3,
   .offer-pop-up h3 {
     font-size: 1.5rem;
+  }
+  .perfect-place-video,
+  .place-video {
+    height: 30vh;
   }
   .offer-pop-up {
     width: 70%;
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 992px) {
+@media screen and (min-width: 600.1px) and (max-width: 992px) {
   body {
     width: 90%;
     margin: 0 auto;

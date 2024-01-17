@@ -50,6 +50,9 @@ nav {
   width: 3rem;
   height: 2.5rem;
 }
+.select-time-location select {
+  background: none;
+}
 .nav-title {
   width: 90%;
   font-size: 2.25rem;
@@ -224,6 +227,10 @@ nav {
   padding: 0.5rem;
   border-radius: 0.5rem;
   background: #ff5400;
+}
+.primary-btn,
+button {
+  cursor: pointer;
 }
 
 .search-btn {
@@ -847,6 +854,9 @@ footer {
   }
   .offer-pop-up {
     width: 70%;
+  }
+  .select-time-location select {
+    background: none;
   }
 }
 
